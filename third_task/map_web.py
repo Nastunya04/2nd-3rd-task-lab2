@@ -1,6 +1,7 @@
 """
 Map web app
 """
+import os
 from flask import Flask, render_template, request
 from map_song import main_function
 
@@ -24,4 +25,5 @@ def entry_page():
     return render_template('base.html', the_title='Map generator')
 
 if __name__ == '__main__':
+    os.chdir(os.path.dirname(os.path.realpath(__file__)))
     app.run(debug = True)
