@@ -200,7 +200,7 @@ Such artist exists
 Invalid input, try again:)
 - - - - - - - - - - - - -
 """)
-        continue_func()
+    continue_func()
 
 if __name__ == '__main__':
     main_function()
