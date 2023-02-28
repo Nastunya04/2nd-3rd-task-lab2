@@ -8,7 +8,7 @@ from map_song import main_function
 app = Flask(__name__)
 
 @app.route('/map', methods=['POST'])
-def do_search():
+def map_func():
     """
     Searches for the best song of an artist and creates a  map
     """
